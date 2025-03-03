@@ -11,7 +11,8 @@ action() {
     #local this_dir="$( cd "$( dirname "$this_file" )" && pwd )"
     #export CMT_BASE=$PWD
     #export CMT_BASE="DUMMY"
-    export CMT_BASE="/vols/cms/saa220/scratch1/ditauonium/nanoaod_base_analysis"
+    #export CMT_BASE="/vols/cms/jleonhol/ditauonium/ditauonium/nanoaod_base_analysis"
+    export CMT_BASE="DUMMY"
     if [[ "$CMT_BASE" == "DUMMY" ]]; then
         echo "Need to change the path stored in CMT_BASE to the present folder"
         return "1"
