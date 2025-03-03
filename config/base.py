@@ -52,5 +52,12 @@ class Config(cmt_config):
         ]
         return ObjectCollection(features)
 
+    def add_weights(self):
+        weights = DotDict()
+        weights.default = "1"
+
+        weights.total_events_weights = ["1"]
+        weights.base = ["1"]
+        return weights
 
 config = Config("base", year=2022, ecm=14, lumi_pb=300000)
