@@ -266,7 +266,7 @@ action() {
 
         if [ "$compile" == "1" ]
         then
-            scram b
+            scram b -j 8
         fi
 
         if [ "$add_sltools_path" == "1" ]
